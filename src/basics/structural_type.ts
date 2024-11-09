@@ -22,4 +22,4 @@ takesPoint2D(point3D);
 // TS2345: Argument of type Point2D is not assignable to parameter of type Point3D
 // Property z is missing in type Point2D but required in type Point3D
 function takesPoint3D (point: Point3D) {/** */}
-takesPoint3D(point2D);
+// takesPoint3D(point2D);
