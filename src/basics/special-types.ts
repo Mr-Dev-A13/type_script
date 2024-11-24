@@ -22,3 +22,14 @@ if (typeof exampleUnknown === "boolean") {
     let unknownValue: boolean = exampleUnknown;
 }
 
+let sameLegacyVariable: unknown;
+
+sameLegacyVariable = 123;
+if (typeof sameLegacyVariable === "number") {
+    sameLegacyVariable.toFixed(2);
+}
+
+sameLegacyVariable = "name";
+if (typeof sameLegacyVariable === "string") {
+    sameLegacyVariable.trim();
+}
