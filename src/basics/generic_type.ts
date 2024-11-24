@@ -1,12 +1,14 @@
 /** A FIFO (First in First out) collection */
 
 class Queue<T> {
-    data = [];
-    push(item: T) { this.data.push(item); }
-    pop(): T { this.data.shift(); }
+    data: T[] = [];
+    push(item: T): void { this.data.push(item); }
+    pop(): T {
+        return this.data.shift() as T;
+    }
 }
 
-let queue = new Queue<number>();
+let queue: Queue<number> = new Queue<number>();
 queue.push(321);
 queue.push(123);
 
