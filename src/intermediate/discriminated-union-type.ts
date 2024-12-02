@@ -15,7 +15,7 @@ type ShapeWithKind =
     | CircleWithKind
     | SquareWithKind
     | RectangleWithKind;
-function area(shape: ShapeWithKind) {
+function areaWithKind(shape: ShapeWithKind) {
     if (shape.kind === "circle") {
         return Math.PI * shape.radius;
     }
