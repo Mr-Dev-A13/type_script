@@ -11,11 +11,11 @@ const pointR: Point_Readonly = {
 // Variable Assignment
 // Attempt to assign to const or readonly variable.
 // TS2588: Cannot assign to pointR because it is a constant
-pointR = { x: 1, y: 1 };
+// pointR = { x: 1, y: 1 };
 
 // Property Assignment
-pointR.x = 13;
-pointR.y = 23;
+// pointR.x = 13;
+// pointR.y = 23;
 
 // PropertyReade
 // Attempt to assign to const or readonly variable.
@@ -37,4 +37,4 @@ const sheep = new AnimalBasic("Sheep");
 console.log(sheep.name); // Allow
 // TS2540: Cannot assign to name because it is a read-only property.
 // Attempt to assign to const or readonly variable
-sheep.name = "Wolf"; // Disallow
+// sheep.name = "Wolf"; // Disallow
