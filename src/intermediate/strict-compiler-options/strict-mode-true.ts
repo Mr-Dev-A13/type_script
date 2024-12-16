@@ -46,6 +46,11 @@ function  getUserAgeForStrictModeTrue(name: string): number {
     const user = usersForStrictModeTrue.find(
         (user: UserForStrictModeTrue) => user.name === name
     );
+    // TS18048: user is possibly undefined;
+    // TS18048: ---> Solution
+    if (user === undefined) {
+        throw new Error(`User not found: ${name}`);
+    }
     return user.age;
 }
 
