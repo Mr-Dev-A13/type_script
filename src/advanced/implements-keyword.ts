@@ -2,7 +2,7 @@ type AnimalOfImplements = {
     name: string,
     voice(): string,
 };
-function log(animal: AnimalOfImplements) {
+function logOfKeyword(animal: AnimalOfImplements): void {
     console.log(`Animal ${animal.name}: ${animal.voice()}`);
 }
 class DogOfImplements implements AnimalOfImplements {
@@ -17,6 +17,6 @@ class CatOfImplements implements AnimalOfImplements {
         return "Woof";
     }
 }
-log(new DogOfImplements('Recs'));
-log(new CatOfImplements('Catty'));
+logOfKeyword(new DogOfImplements('Recs'));
+logOfKeyword(new CatOfImplements('Catty'));
 // --- END ---
