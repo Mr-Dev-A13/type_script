@@ -1,4 +1,4 @@
-function add (a: number, b: number): number {
+function add_F (a: number, b: number): number {
     return a + b;
 }
 
@@ -21,4 +21,4 @@ let fnAdd: Add;
 fnAdd = function (a: number, b: number): number {
     return a + b;
 };
-// add = (a, b) => a + b; // JS
+// aad_Fdd = (a, b) => a + b; // JS

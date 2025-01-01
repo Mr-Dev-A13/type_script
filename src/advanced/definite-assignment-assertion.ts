@@ -1,13 +1,13 @@
 let dice!: number;
-function rollDice() {
+function rollDice_DAA() {
     dice = (Math.floor(Math.random() * 6) + 1);
 }
-rollDice();
+rollDice_DAA();
 // TS2454: Variable dice is used before being assigned.
 // console.log(dice);
 // console.log("Current dice value_1:", dice);
 // console.log("Current dice value_1:", dice!);
-rollDice();
+rollDice_DAA();
 // Same error.
 // console.log("Current dice value_2:", dice);
 
